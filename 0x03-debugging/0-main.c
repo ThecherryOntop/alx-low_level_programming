@@ -10,7 +10,7 @@ int main(void)
         int i;
 
         i = 0;
-        printf("is zero");
+        printf("positive_or_negative(0)");
 
         return (0);
 }
