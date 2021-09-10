@@ -2,3 +2,4 @@
 
 0. A function that concatenates two strings
 
+1. Another function that concatenate two strings
