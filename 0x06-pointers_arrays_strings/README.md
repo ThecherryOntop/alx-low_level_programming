@@ -11,3 +11,5 @@
 4. A function that reverse the content of an array of integer
 
 5. A function that changes all lowercase to a string of uppercase
+
+6. A function that capitalizes all words in a string"
