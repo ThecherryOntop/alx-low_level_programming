@@ -7,3 +7,5 @@
 2. A function that copies a string
 
 3. A function that compares two strings
+
+4. A function that reverse the content of an array of integer
