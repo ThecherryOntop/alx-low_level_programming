@@ -1,44 +1,40 @@
-include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 /**
- * isInteger - checks if s is an integer
- * @s: string to check
- * Return: 0 or 1
- */
+* main - Entry point
+* Description - A program that adds positive numbers
+* *@argc: the function accepts an input saved into argc
+* *@argv: the function accepts an input saved into argv
+* Return: Success (0)
+*/
+int main(int argc, char *argv[])
+{
+	int count = 1;
+	int sum = 0;
 
-int isInteger(const char *s)
-{
-int i = 0;
-while (s[i] != '\0')
-{
-	if (s[i] < '0' || s[i] > '9')
-		return (1);
-	i++;
-}
-return (0);
-}
-
-/**
- * main - adds positive numbers
- * @argc: int
- * @argv: list
- * Return: 0
- */
-
-int main(int argc, char const *argv[])
-{
-int sum = 0;
-while (--argc)
-{
-	if (isInteger(argv[argc]))
+	if (argc < 1)
 	{
-		printf("Error\n");
+		printf("%s", "Error\n");
 		return (1);
 	}
-	sum += atoi(argv[argc]);
-}
 
-printf("%i\n", sum);
+	while (count < argc)
+	{
+		char *argument = argv[count];
 
-return (0);
+		if (!atoi(argument))
+		{
+			printf("%s\n", "Error");
+			return (1);
+		}
+		else
+		{
+			sum += atoi(argument);
+		}
+		count++;
+	}
+
+	printf("%d\n", sum);
+
+	return (0);
 }
