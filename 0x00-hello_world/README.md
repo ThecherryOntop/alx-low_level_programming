@@ -1,1 +1,1 @@
-*Starting to code in C*
+**STARTING TO PROGRAM IN C**
