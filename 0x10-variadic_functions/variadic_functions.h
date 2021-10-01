@@ -1,0 +1,19 @@
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
+
+#include <stdarg.h>
+
+int _putchar(char c);
+/**
+ * struct pter - pointer to print all
+ * @test: pointer to input for test
+ * @printer: pointer to function
+ */
+typedef struct pter
+{
+char *test;
+void (*printer)();
+} pt;
+int sum_them_all(const unsigned int n, ...);
+
+#endif
