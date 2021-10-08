@@ -3,7 +3,7 @@
 /**
  * list_len - returns the number of elements in a linked list
  * @h: pointer to linked list
- * return: unsigned int that identifies the number of elements
+ * Return: unsigned int that identifies the number of elements
  */
 size_t list_len(const list_t *h)
 {
@@ -15,5 +15,5 @@ size_t list_len(const list_t *h)
 	{
 		h = h->next;
 	}
-	return (count)
+	return (count);
 }
