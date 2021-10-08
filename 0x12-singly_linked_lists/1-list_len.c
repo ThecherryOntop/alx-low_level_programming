@@ -1,19 +1,22 @@
 #include "lists.h"
-
 /**
- * list_len - returns the number of elements in a linked list
- * @h: pointer to linked list
- * Return: unsigned int that identifies the number of elements
+ * list_len - counts number of elements of the linked list h
+ *@h: pointer to our linked list
+ *Return: number of nodes
  */
 size_t list_len(const list_t *h)
 {
-	int count = 0;
-
-	if (h == NULL)
-		return (count);
-	for (; h; count++)
-	{
-		h = h->next;
-	}
-	return (count);
+const list_t *temp;
+unsigned int count;
+temp = malloc(sizeof(list_t));
+if (temp == NULL)
+return (0);
+temp = h;
+count  = 0;
+while (temp != NULL)
+{
+temp  = temp->next;
+count++;
+}
+return (count);
 }
