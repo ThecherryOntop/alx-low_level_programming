@@ -1,11 +1,12 @@
-#include <stdio.h>
+#include <stdio.hi>
 #include <stdlib.h>
 #include <time.h>
 /**
  * main - The entry point
  * Description - Assign a random number and prints the last digit
  * Return: 0
- */int main(void)
+ */
+int main(void)
 {
 int n;
 int m;
