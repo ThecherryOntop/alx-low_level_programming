@@ -9,8 +9,8 @@
  *         Otherwise - the converted number.
  */
 unsigned int binary_to_uint(const char *b)
+
 {
-	
 
 	unsigned int num = 0, mult = 1;
 	int len;
