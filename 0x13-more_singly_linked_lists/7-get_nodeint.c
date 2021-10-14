@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 /**
 * get_nodeint_at_index - Entry point
