@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * A dynamic library file containing all the functions listed
  * File name: libdynamic.c
- * _islower - prints all lowercase letters
- * _putchar: writes the character to stpout
- * @c: The character to print
+ * _putchar - writes the character  c to stdout
+ * @c: Thge character to print
  * Return: Nothing
  */
+int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
@@ -28,11 +29,10 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 int _putchar(char c)
-
 {
 	_putchar(c);
 
 	_putchar('\n');
 
-	return (0);
+	return(0);
 }
